@@ -1,0 +1,41 @@
+{
+  "name": "unexpected-exif",
+  "version": "1.0.1",
+  "description": "EXIF plugin for the Unexpected assertion library",
+  "main": "lib/unexpectedExif.js",
+  "dependencies": {
+    "exif-parser": "0.1.7"
+  },
+  "devDependencies": {
+    "coveralls": "2.11.2",
+    "istanbul": "0.3.13",
+    "jshint": "2.6.3",
+    "mocha": "2.2.1",
+    "unexpected": "7.0.0"
+  },
+  "scripts": {
+    "lint": "jshint .",
+    "test": "mocha && npm run lint",
+    "travis": "npm test && npm run coverage && <coverage/lcov.info coveralls",
+    "coverage": "NODE_ENV=development istanbul cover _mocha -- --reporter dot && echo google-chrome coverage/lcov-report/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/unexpectedjs/unexpected-exif.git"
+  },
+  "keywords": [
+    "test",
+    "assertion",
+    "unexpected",
+    "image",
+    "resemblance",
+    "comparison",
+    "diff"
+  ],
+  "author": "Andreas Lind <andreas@one.com>",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/unexpectedjs/unexpected-exif/issues"
+  },
+  "homepage": "https://github.com/unexpectedjs/unexpected-exif"
+}
