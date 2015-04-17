@@ -5,35 +5,28 @@ var unexpected = require('unexpected'),
 
 describe('unexpected-exif', function () {
     var expect = unexpected.clone()
-        .installPlugin(require('../lib/unexpectedExif'))
-        .addAssertion('Error', 'to have message', function (expect, subject, value) {
-            this.errorMode = 'nested';
-            return expect(subject._isUnexpected ? subject.output.toString() : subject.message, 'to satisfy', value);
-        });
+        .installPlugin(require('../lib/unexpectedExif'));
+
+    expect.output.preferredWidth = 80;
 
     var testImagePath = pathModule.resolve(__dirname, '..', 'testdata', 'exifOriented.jpg');
 
     describe('with an image specified by file name', function () {
         it('should succeed', function () {
-            return expect(testImagePath, 'to be an image whose EXIF data satisfies', { tags: { Model: 'iPhone 6' } });
+            return expect(testImagePath, 'to have EXIF data satisfying', { tags: { Model: 'iPhone 6' } });
         });
 
         it('should fail with a diff', function () {
             expect(function () {
-                return expect(testImagePath, 'to be an image whose EXIF data satisfies', {
+                return expect(testImagePath, 'to have EXIF data satisfying', {
                     tags: {
                         Make: 'Apple',
                         ShutterSpeedValue: expect.it('to be within', 8, 9)
                     }
                 });
             }, 'to throw',
-                "expected '" + testImagePath + "' to be an image whose EXIF data satisfies\n" +
-                "{\n" +
-                "  tags: {\n" +
-                "    Make: 'Apple',\n" +
-                "    ShutterSpeedValue: expect.it('to be within', 8, 9)\n" +
-                "  }\n" +
-                "}\n" +
+                "expected '" + testImagePath + "'\n" +
+                "to have EXIF data satisfying { tags: { Make: 'Apple', ShutterSpeedValue: expect.it('to be within', 8, 9) } }\n" +
                 "\n" +
                 "{\n" +
                 "  startMarker: { openWithOffset: ..., offset: 0 },\n" +
@@ -87,7 +80,7 @@ describe('unexpected-exif', function () {
 
     describe('with an image specified by a Buffer instance', function () {
         it('should succeed', function () {
-            return expect(fs.readFileSync(testImagePath), 'to be an image whose EXIF data satisfies', { tags: { Model: 'iPhone 6' } });
+            return expect(fs.readFileSync(testImagePath), 'to have EXIF data satisfying', { tags: { Model: 'iPhone 6' } });
         });
     });
 });
