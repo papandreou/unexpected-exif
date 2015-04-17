@@ -3,10 +3,10 @@ unexpected-exif
 
 EXIF data plugin for the [Unexpected](https://unexpectedjs.github.io/) assertion library (version 7+ required). Uses the [exif-parser](https://github.com/bwindels/exif-parser) module to do most of the work.
 
-[![NPM version](https://badge.fury.io/js/unexpected-exif.png)](http://badge.fury.io/js/unexpected-exif)
-[![Build Status](https://travis-ci.org/unexpectedjs/unexpected-exif.png)](https://travis-ci.org/unexpectedjs/unexpected-exif)
-[![Coverage Status](https://coveralls.io/repos/unexpectedjs/unexpected-exif/badge.png)](https://coveralls.io/r/unexpectedjs/unexpected-exif)
-[![Dependency Status](https://david-dm.org/unexpectedjs/unexpected-exif.png)](https://david-dm.org/unexpectedjs/unexpected-exif)
+[![NPM version](https://badge.fury.io/js/unexpected-exif.svg)](http://badge.fury.io/js/unexpected-exif)
+[![Build Status](https://travis-ci.org/unexpectedjs/unexpected-exif.svg)](https://travis-ci.org/unexpectedjs/unexpected-exif)
+[![Coverage Status](https://coveralls.io/repos/unexpectedjs/unexpected-exif/badge.svg)](https://coveralls.io/r/unexpectedjs/unexpected-exif)
+[![Dependency Status](https://david-dm.org/unexpectedjs/unexpected-exif.svg)](https://david-dm.org/unexpectedjs/unexpected-exif)
 
 The image can be specified either as a string (file name) or as a Buffer instance.
 
