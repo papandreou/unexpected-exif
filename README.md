@@ -12,7 +12,7 @@ The image can be specified either as a string (file name) or as a Buffer instanc
 
 ```js
 it('should have the correct EXIF data', function () {
-    return expect('foo.jpg', 'to be an image whose EXIF data satisfies', {
+    return expect('foo.jpg', 'to have EXIF data satisfying', {
         tags: {
             XResolution: 72,
             Model: 'iPhone 6'
