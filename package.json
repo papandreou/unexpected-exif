@@ -10,8 +10,8 @@
     "coveralls": "2.11.2",
     "istanbul": "0.3.13",
     "jshint": "2.6.3",
-    "mocha": "2.2.1",
-    "unexpected": "7.0.0"
+    "mocha": "2.2.5",
+    "unexpected": "8.0.0"
   },
   "scripts": {
     "lint": "jshint .",
