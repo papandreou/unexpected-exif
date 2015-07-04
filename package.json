@@ -28,9 +28,9 @@
     "assertion",
     "unexpected",
     "image",
-    "resemblance",
-    "comparison",
-    "diff"
+    "exif",
+    "exif data",
+    "metadata"
   ],
   "author": "Andreas Lind <andreas@one.com>",
   "license": "BSD",
