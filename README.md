@@ -8,19 +8,6 @@ EXIF data plugin for the [Unexpected](https://unexpectedjs.github.io/) assertion
 [![Coverage Status](https://coveralls.io/repos/unexpectedjs/unexpected-exif/badge.svg)](https://coveralls.io/r/unexpectedjs/unexpected-exif)
 [![Dependency Status](https://david-dm.org/unexpectedjs/unexpected-exif.svg)](https://david-dm.org/unexpectedjs/unexpected-exif)
 
-The image can be specified either as a string (file name) or as a Buffer instance.
-
-```js
-it('should have the correct EXIF data', function () {
-    return expect('foo.jpg', 'to have EXIF data satisfying', {
-        tags: {
-            XResolution: 72,
-            Model: 'iPhone 6'
-        }
-    });
-});
-```
-
 Read [the documentation](http://unexpected.js.org/unexpected-exif/).
 
 License
