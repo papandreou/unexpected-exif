@@ -25,7 +25,7 @@ describe('unexpected-exif', function () {
                     }
                 });
             }, 'to throw',
-                "expected '" + testImagePath + "'\n" +
+                "expected " + testImagePath + " (image/jpeg)\n" +
                 "to have EXIF data satisfying { tags: { Make: 'Apple', ShutterSpeedValue: expect.it('to be within', 8, 9) } }\n" +
                 "\n" +
                 "{\n" +

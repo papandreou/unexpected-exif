@@ -6,18 +6,27 @@
   "dependencies": {
     "exif-parser": "0.1.7"
   },
+  "peerDependencies": {
+    "unexpected": "^9.2.0"
+  },
   "devDependencies": {
     "coveralls": "2.11.2",
     "istanbul": "0.3.13",
     "jshint": "2.6.3",
+    "magicpen-media": "1.5.0",
+    "minimist": "1.1.1",
     "mocha": "2.2.5",
-    "unexpected": "9.0.0"
+    "unexpected": "9.2.0",
+    "unexpected-documentation-site-generator": "2.5.1"
   },
   "scripts": {
     "lint": "jshint .",
     "test": "mocha && npm run lint",
-    "travis": "npm test && npm run coverage && (<coverage/lcov.info coveralls || true)",
-    "coverage": "NODE_ENV=development istanbul cover _mocha -- --reporter dot && echo google-chrome coverage/lcov-report/index.html"
+    "travis": "npm test && npm run coverage && (<coverage/lcov.info coveralls || true) && npm run generate-site",
+    "coverage": "NODE_ENV=development istanbul cover _mocha --report text --report lcov -- --reporter dot && echo google-chrome coverage/lcov-report/index.html",
+    "generate-site": "node ./generate-site.js && cp magic-pen-6-colours.jpg site-build && cp magic-pen-6-colours.jpg site-build/assertions/string/to-have-EXIF-data-satisfying/ && cp magic-pen-6-colours.jpg site-build/assertions/Buffer/to-have-EXIF-data-satisfying/",
+    "update-examples": "node ./generate-site.js --update-examples && npm run generate-site",
+    "deploy-site": "deploy-site"
   },
   "repository": {
     "type": "git",

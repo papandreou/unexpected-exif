@@ -21,6 +21,8 @@ it('should have the correct EXIF data', function () {
 });
 ```
 
+Read [the documentation](http://unexpected.js.org/unexpected-exif/).
+
 License
 -------
 
