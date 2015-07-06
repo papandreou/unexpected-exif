@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+    <link rel="stylesheet" href="../../../static/normalize.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="../../../static/main.css" type="text/css" media="screen" />
+    <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="../../../static/bug-icon-black.ico">
+    <title>string - to have EXIF data satisfying</title>
+</head>
+<body class="sidebar-hidden has-sidebar">
+    <header>
+        <div class="logo-icon"></div>
+        <nav>
+            <ul>
+                <li class="menu-toggle-item">
+                    <button class="menu-toggle" onclick="toggleSidebar()"></button>
+                </li>
+                
+                <li class=""><a href="../../..">unexpected-exif</a></li>
+                
+                
+                <li class="active"><a href="">Assertions</a></li>
+                
+                
+            </ul>
+        </nav>
+        <div class="search" style="visibility: hidden">
+            <input id="search" placeholder="Search..." value="">
+            <div id="searchDropDown" class="dropDown">
+                <ul id="searchResults"></ul>
+            </div>
+        </div>
+    </header>
+
+<section id="assertions">
+    <nav id="assertion-menu" class="sidebar js-remember-scroll-position">
+    <ul>
+        
+        <li>
+            <h3>string</h3>
+            <ul>
+                
+                <li class="active">
+                    <a href="">to have EXIF data satisfying</a>
+                </li>
+                
+            </ul>
+        </li>
+        
+        <li>
+            <h3>Buffer</h3>
+            <ul>
+                
+                <li class="">
+                    <a href="../../Buffer/to-have-EXIF-data-satisfying">to have EXIF data satisfying</a>
+                </li>
+                
+            </ul>
+        </li>
+        
+    </ul>
+</nav>
+
+    <div class="main" tabindex="-1">
+        <div class="content">
+            <p>Asserts that the given image has EXIF data that <a href="http://unexpected.js.org/assertions/any/to-satisfy/">satisfies</a> the given spec:</p>
+<div class="code lang-javascript">
+  <div><span style="color: #a71d5d">return</span>&nbsp;<span style="color: #000000">expect</span><span style="color: #000000">(</span><span style="color: #df5000">'magic-pen-6-colours.jpg'</span><span style="color: #000000">,</span>&nbsp;<span style="color: #df5000">'to&nbsp;have&nbsp;EXIF&nbsp;data&nbsp;satisfying'</span><span style="color: #000000">,</span>&nbsp;<span style="color: #000000">{</span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;tags<span style="color: #000000">:</span>&nbsp;<span style="color: #000000">{</span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XResolution<span style="color: #000000">:</span>&nbsp;<span style="color: #0086b3">72</span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #000000">}</span></div>
+  <div><span style="color: #000000">});</span></div>
+</div><p>You get a diff when the assertion fails:</p>
+<div class="code lang-javascript">
+  <div><span style="color: #a71d5d">return</span>&nbsp;<span style="color: #000000">expect</span><span style="color: #000000">(</span><span style="color: #df5000">'magic-pen-6-colours.jpg'</span><span style="color: #000000">,</span>&nbsp;<span style="color: #df5000">'to&nbsp;have&nbsp;EXIF&nbsp;data&nbsp;satisfying'</span><span style="color: #000000">,</span>&nbsp;<span style="color: #000000">{</span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;tags<span style="color: #000000">:</span>&nbsp;<span style="color: #000000">{</span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XResolution<span style="color: #000000">:</span>&nbsp;<span style="color: #0086b3">96</span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #000000">}</span></div>
+  <div><span style="color: #000000">});</span></div>
+</div><div class="output">
+  <div><span style="color: red; font-weight: bold">expected</span></div>
+  <div><a href="magic-pen-6-colours.jpg"><img src="magic-pen-6-colours.jpg" title="magic-pen-6-colours.jpg" style="max-width: 6em; max-width: 10ch; max-height: 5em"></a></div>
+  <div><span style="color: red; font-weight: bold">to&nbsp;have&nbsp;EXIF&nbsp;data&nbsp;satisfying</span>&nbsp;{&nbsp;<span style="color: #555">tags</span>:&nbsp;{&nbsp;<span style="color: #555">XResolution</span>:&nbsp;<span style="color: #0086b3">96</span>&nbsp;}&nbsp;}</div>
+  <div>&nbsp;</div>
+  <div>{</div>
+  <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: #555">startMarker</span>:&nbsp;{&nbsp;<span style="color: #555">openWithOffset</span>:&nbsp;...,&nbsp;<span style="color: #555">offset</span>:&nbsp;<span style="color: #0086b3">0</span>&nbsp;},</div>
+</div></div>
+  <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: #555">tags</span>:&nbsp;{</div>
+  <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: #555">ProcessingSoftware</span>:&nbsp;<span style="color: #df5000">'gThumb&nbsp;3.0.2'</span>,</div>
+</div></div>
+  <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: #555">Orientation</span>:&nbsp;<span style="color: #0086b3">1</span>,</div>
+</div></div>
+  <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: #555">XResolution</span>:&nbsp;<span style="color: #0086b3">72</span>,&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: red; font-weight: bold">//</span></div>
+</div>&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: red; font-weight: bold">should&nbsp;equal</span>&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: #0086b3">96</span></div>
+</div></div>
+</div></div>
+</div></div>
+  <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: #555">YResolution</span>:&nbsp;<span style="color: #0086b3">72</span>,</div>
+</div></div>
+  <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: #555">ResolutionUnit</span>:&nbsp;<span style="color: #0086b3">2</span>,</div>
+</div></div>
+  <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: #555">ModifyDate</span>:&nbsp;<span style="color: #df5000">'2014:07:13&nbsp;16:21:04'</span>,</div>
+</div></div>
+  <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: #555">YCbCrPositioning</span>:&nbsp;<span style="color: #0086b3">1</span>,</div>
+</div></div>
+  <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: #555">ColorSpace</span>:&nbsp;<span style="color: #0086b3">1</span>,</div>
+</div></div>
+  <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: #555">ExifImageWidth</span>:&nbsp;<span style="color: #0086b3">380</span>,</div>
+</div></div>
+  <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: #555">ExifImageHeight</span>:&nbsp;<span style="color: #0086b3">248</span></div>
+</div></div>
+  <div>},</div>
+</div></div>
+  <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: #555">imageSize</span>:&nbsp;{&nbsp;<span style="color: #555">height</span>:&nbsp;<span style="color: #0086b3">248</span>,&nbsp;<span style="color: #555">width</span>:&nbsp;<span style="color: #0086b3">380</span>&nbsp;},</div>
+</div></div>
+  <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: #555">thumbnailOffset</span>:&nbsp;<span style="color: #0086b3">300</span>,</div>
+</div></div>
+  <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: #555">thumbnailLength</span>:&nbsp;<span style="color: #0086b3">2152</span>,</div>
+</div></div>
+  <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: #555">thumbnailType</span>:&nbsp;<span style="color: #0086b3">6</span>,</div>
+</div></div>
+  <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: #555">app1Offset</span>:&nbsp;<span style="color: #0086b3">24</span></div>
+</div></div>
+  <div>}</div>
+</div>
+        </div>
+    </div>
+</section>
+<script type="text/javascript">
+    baseUrl = '../../..';
+</script>
+<script type="text/javascript" src="../../../static/toggleSidebar.js"></script>
+<script type="text/javascript" src="../../../static/rememberScrollPosition.js"></script>
+<script type="text/javascript" src="../../../static/focusMain.js"></script>
+<script type="text/javascript" src="../../../static/search.js"></script>
+</body>
+</html>
+
