@@ -46,7 +46,8 @@ describe("documentation tests", function () {
             });
         }).caught(function (e) {
             expect(e, "to have message",
-                "expected Buffer[13509] (image) to have EXIF data satisfying { tags: { XResolution: 96 } }\n" +
+                "expected Buffer[13509] (image)\n" +
+                "to have EXIF data satisfying { tags: { XResolution: 96 } }\n" +
                 "\n" +
                 "{\n" +
                 "  tags: {\n" +
@@ -103,7 +104,8 @@ describe("documentation tests", function () {
             });
         }).caught(function (e) {
             expect(e, "to have message",
-                "expected magic-pen-6-colours.jpg (image/jpeg) to have EXIF data satisfying { tags: { XResolution: 96 } }\n" +
+                "expected magic-pen-6-colours.jpg (image/jpeg)\n" +
+                "to have EXIF data satisfying { tags: { XResolution: 96 } }\n" +
                 "\n" +
                 "{\n" +
                 "  tags: {\n" +
@@ -154,7 +156,8 @@ describe("documentation tests", function () {
             });
         }).caught(function (e) {
             expect(e, "to have message",
-                "expected magic-pen-6-colours.jpg (image/jpeg) to have EXIF data satisfying { tags: { XResolution: 72, Model: 'iPhone 6' } }\n" +
+                "expected magic-pen-6-colours.jpg (image/jpeg)\n" +
+                "to have EXIF data satisfying { tags: { XResolution: 72, Model: 'iPhone 6' } }\n" +
                 "\n" +
                 "{\n" +
                 "  tags: {\n" +

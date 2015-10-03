@@ -19,7 +19,8 @@ return expect(require('fs').readFileSync('magic-pen-6-colours.jpg'), 'to have EX
 ```
 
 ```output
-expected Buffer[13509] (image) to have EXIF data satisfying { tags: { XResolution: 96 } }
+expected Buffer[13509] (image)
+to have EXIF data satisfying { tags: { XResolution: 96 } }
 
 {
   tags: {

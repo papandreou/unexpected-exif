@@ -26,7 +26,8 @@ return expect('magic-pen-6-colours.jpg', 'to have EXIF data satisfying', {
 ```
 
 ```output
-expected magic-pen-6-colours.jpg (image/jpeg) to have EXIF data satisfying { tags: { XResolution: 72, Model: 'iPhone 6' } }
+expected magic-pen-6-colours.jpg (image/jpeg)
+to have EXIF data satisfying { tags: { XResolution: 72, Model: 'iPhone 6' } }
 
 {
   tags: {
