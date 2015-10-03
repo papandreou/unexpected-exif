@@ -1,6 +1,6 @@
 {
   "name": "unexpected-exif",
-  "version": "2.2.1",
+  "version": "2.2.2",
   "description": "EXIF plugin for the Unexpected assertion library",
   "main": "lib/unexpectedExif.js",
   "dependencies": {
