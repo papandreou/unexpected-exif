@@ -22,7 +22,6 @@ return expect('magic-pen-6-colours.jpg', 'to have EXIF data satisfying', {
 expected magic-pen-6-colours.jpg (image/jpeg) to have EXIF data satisfying { tags: { XResolution: 96 } }
 
 {
-  startMarker: { openWithOffset: ..., offset: 0 },
   tags: {
     ProcessingSoftware: 'gThumb 3.0.2',
     Orientation: 1,

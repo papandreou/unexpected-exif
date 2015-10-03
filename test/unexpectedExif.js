@@ -29,7 +29,6 @@ describe('unexpected-exif', function () {
                 "to have EXIF data satisfying { tags: { Make: 'Apple', ShutterSpeedValue: expect.it('to be within', 8, 9) } }\n" +
                 "\n" +
                 "{\n" +
-                "  startMarker: { openWithOffset: ..., offset: 0 },\n" +
                 "  tags: {\n" +
                 "    Make: 'Apple',\n" +
                 "    Model: 'iPhone 6',\n" +

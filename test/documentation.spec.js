@@ -49,7 +49,6 @@ describe("documentation tests", function () {
                 "expected Buffer[13509] (image) to have EXIF data satisfying { tags: { XResolution: 96 } }\n" +
                 "\n" +
                 "{\n" +
-                "  startMarker: { openWithOffset: ..., offset: 0 },\n" +
                 "  tags: {\n" +
                 "    ProcessingSoftware: 'gThumb 3.0.2',\n" +
                 "    Orientation: 1,\n" +
@@ -107,7 +106,6 @@ describe("documentation tests", function () {
                 "expected magic-pen-6-colours.jpg (image/jpeg) to have EXIF data satisfying { tags: { XResolution: 96 } }\n" +
                 "\n" +
                 "{\n" +
-                "  startMarker: { openWithOffset: ..., offset: 0 },\n" +
                 "  tags: {\n" +
                 "    ProcessingSoftware: 'gThumb 3.0.2',\n" +
                 "    Orientation: 1,\n" +
@@ -159,7 +157,6 @@ describe("documentation tests", function () {
                 "expected magic-pen-6-colours.jpg (image/jpeg) to have EXIF data satisfying { tags: { XResolution: 72, Model: 'iPhone 6' } }\n" +
                 "\n" +
                 "{\n" +
-                "  startMarker: { openWithOffset: ..., offset: 0 },\n" +
                 "  tags: {\n" +
                 "    ProcessingSoftware: 'gThumb 3.0.2',\n" +
                 "    Orientation: 1,\n" +

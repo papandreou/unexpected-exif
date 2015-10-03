@@ -22,7 +22,6 @@ return expect(require('fs').readFileSync('magic-pen-6-colours.jpg'), 'to have EX
 expected Buffer[13509] (image) to have EXIF data satisfying { tags: { XResolution: 96 } }
 
 {
-  startMarker: { openWithOffset: ..., offset: 0 },
   tags: {
     ProcessingSoftware: 'gThumb 3.0.2',
     Orientation: 1,
