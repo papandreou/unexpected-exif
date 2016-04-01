@@ -24,6 +24,7 @@
                 <li class="active"><a href="">Assertions</a></li>
                 
                 
+                
             </ul>
         </nav>
         <div class="search" style="visibility: hidden">
@@ -36,35 +37,37 @@
 
 <section id="assertions">
     <nav id="assertion-menu" class="sidebar js-remember-scroll-position">
-    <ul>
-        
-        <li>
-            <h3>string</h3>
-            <ul>
-                
-                <li class="active">
-                    <a href="">to have EXIF data satisfying</a>
-                </li>
-                
-            </ul>
-        </li>
-        
-        <li>
-            <h3>Buffer</h3>
-            <ul>
-                
-                <li class="">
-                    <a href="../../Buffer/to-have-EXIF-data-satisfying">to have EXIF data satisfying</a>
-                </li>
-                
-            </ul>
-        </li>
-        
-    </ul>
+    
+        <h3 class=""><a href="..">string</a></h3>
+        <ul>
+            
+            <li class="active">
+                <a href="">to have EXIF data satisfying</a>
+            </li>
+            
+        </ul>
+    
+        <h3 class=""><a href="../../Buffer">Buffer</a></h3>
+        <ul>
+            
+            <li class="">
+                <a href="../../Buffer/to-have-EXIF-data-satisfying">to have EXIF data satisfying</a>
+            </li>
+            
+        </ul>
+    
 </nav>
 
     <div class="main" tabindex="-1">
         <div class="content">
+            <h1>to have EXIF data satisfying</h1>
+            
+                <ul class="declarations">
+                
+                    <li>&lt;string&gt; to have (exif|EXIF) data satisfying &lt;any&gt;</li>
+                
+                </ul>
+            
             <p>Asserts that the given image has EXIF data that <a href="http://unexpected.js.org/assertions/any/to-satisfy/">satisfies</a> the given spec:</p>
 <div class="code lang-javascript">
   <div><span style="color: #a71d5d">return</span>&nbsp;<span style="color: #000000">expect</span><span style="color: #000000">(</span><span style="color: #df5000">'magic-pen-6-colours.jpg'</span><span style="color: #000000">,</span>&nbsp;<span style="color: #df5000">'to&nbsp;have&nbsp;EXIF&nbsp;data&nbsp;satisfying'</span><span style="color: #000000">,</span>&nbsp;<span style="color: #000000">{</span></div>
@@ -85,9 +88,6 @@
   <div><span style="color: red; font-weight: bold">to&nbsp;have&nbsp;EXIF&nbsp;data&nbsp;satisfying</span>&nbsp;{&nbsp;<span style="color: #555">tags</span>:&nbsp;{&nbsp;<span style="color: #555">XResolution</span>:&nbsp;<span style="color: #0086b3">96</span>&nbsp;}&nbsp;}</div>
   <div>&nbsp;</div>
   <div>{</div>
-  <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: #555">startMarker</span>:&nbsp;{&nbsp;<span style="color: #555">openWithOffset</span>:&nbsp;...,&nbsp;<span style="color: #555">offset</span>:&nbsp;<span style="color: #0086b3">0</span>&nbsp;},</div>
-</div></div>
   <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
   <div><span style="color: #555">tags</span>:&nbsp;{</div>
   <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">

@@ -1,10 +1,10 @@
 [
   {
-    "label": "to have EXIF data satisfying (string)",
-    "url": "/assertions/string/to-have-EXIF-data-satisfying/"
-  },
-  {
     "label": "to have EXIF data satisfying (Buffer)",
     "url": "/assertions/Buffer/to-have-EXIF-data-satisfying/"
+  },
+  {
+    "label": "to have EXIF data satisfying (string)",
+    "url": "/assertions/string/to-have-EXIF-data-satisfying/"
   }
 ]
