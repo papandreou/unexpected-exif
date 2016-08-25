@@ -44,75 +44,75 @@
 <a href="https://david-dm.org/unexpectedjs/unexpected-exif"><img src="https://david-dm.org/unexpectedjs/unexpected-exif.svg" alt="Dependency Status"></a></p>
 <p>The image can be specified either as a string (file name) or as a Buffer instance.</p>
 <div class="code lang-javascript">
-  <div><span style="color: #F92672">return</span>&nbsp;expect<span style="color: #999">(</span><span style="color: #E6DB74">'magic-pen-6-colours.jpg'</span><span style="color: #999">,</span>&nbsp;<span style="color: #E6DB74">'to&nbsp;have&nbsp;EXIF&nbsp;data&nbsp;satisfying'</span><span style="color: #999">,</span>&nbsp;<span style="color: #999">{</span></div>
+  <div><span style="color: #FFAA27">return</span>&nbsp;expect<span style="color: #999">(</span><span style="color: #3CDAFF">'magic-pen-6-colours.jpg'</span><span style="color: #999">,</span>&nbsp;<span style="color: #3CDAFF">'to&nbsp;have&nbsp;EXIF&nbsp;data&nbsp;satisfying'</span><span style="color: #999">,</span>&nbsp;<span style="color: #999">{</span></div>
   <div>&nbsp;&nbsp;&nbsp;&nbsp;tags<span style="color: #999">:</span>&nbsp;<span style="color: #999">{</span></div>
-  <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XResolution<span style="color: #999">:</span>&nbsp;<span style="color: #66D9EF; font-weight: bold">72</span><span style="color: #999">,</span></div>
-  <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Model<span style="color: #999">:</span>&nbsp;<span style="color: #E6DB74">'iPhone&nbsp;6'</span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XResolution<span style="color: #999">:</span>&nbsp;<span style="color: white">72</span><span style="color: #999">,</span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Model<span style="color: #999">:</span>&nbsp;<span style="color: #3CDAFF">'iPhone&nbsp;6'</span></div>
   <div>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #999">}</span></div>
   <div><span style="color: #999">});</span></div>
 </div><div class="output">
-  <div><span style="color: #F92672; font-weight: bold">expected</span></div>
+  <div><span style="color: red; font-weight: bold">expected</span></div>
   <div><a href="magic-pen-6-colours.jpg"><img src="magic-pen-6-colours.jpg" title="magic-pen-6-colours.jpg" style="max-width: 6em; max-width: 10ch; max-height: 5em"></a></div>
-  <div><span style="color: #F92672; font-weight: bold">to&nbsp;have&nbsp;EXIF&nbsp;data&nbsp;satisfying</span>&nbsp;{&nbsp;<span style="color: #CCC">tags</span>:&nbsp;{&nbsp;<span style="color: #CCC">XResolution</span>:&nbsp;<span style="color: #66D9EF">72</span>,&nbsp;<span style="color: #CCC">Model</span>:&nbsp;<span style="color: #E6DB74">'iPhone&nbsp;6'</span>&nbsp;}&nbsp;}</div>
+  <div><span style="color: red; font-weight: bold">to&nbsp;have&nbsp;EXIF&nbsp;data&nbsp;satisfying</span>&nbsp;{&nbsp;<span style="color: #939393">tags</span>:&nbsp;{&nbsp;<span style="color: #939393">XResolution</span>:&nbsp;72,&nbsp;<span style="color: #939393">Model</span>:&nbsp;<span style="color: #3CDAFF">'iPhone&nbsp;6'</span>&nbsp;}&nbsp;}</div>
   <div>&nbsp;</div>
   <div>{</div>
   <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: #CCC">tags</span>:&nbsp;{</div>
+  <div><span style="color: #939393">tags</span>:&nbsp;{</div>
   <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: #CCC">ProcessingSoftware</span>:&nbsp;<span style="color: #E6DB74">'gThumb&nbsp;3.0.2'</span>,</div>
+  <div><span style="color: #939393">ProcessingSoftware</span>:&nbsp;<span style="color: #3CDAFF">'gThumb&nbsp;3.0.2'</span>,</div>
 </div></div>
   <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: #CCC">Orientation</span>:&nbsp;<span style="color: #66D9EF">1</span>,</div>
+  <div><span style="color: #939393">Orientation</span>:&nbsp;1,</div>
 </div></div>
   <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: #CCC">XResolution</span>:&nbsp;<span style="color: #66D9EF">72</span>,</div>
+  <div><span style="color: #939393">XResolution</span>:&nbsp;72,</div>
 </div></div>
   <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: #CCC">YResolution</span>:&nbsp;<span style="color: #66D9EF">72</span>,</div>
+  <div><span style="color: #939393">YResolution</span>:&nbsp;72,</div>
 </div></div>
   <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: #CCC">ResolutionUnit</span>:&nbsp;<span style="color: #66D9EF">2</span>,</div>
+  <div><span style="color: #939393">ResolutionUnit</span>:&nbsp;2,</div>
 </div></div>
   <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: #CCC">ModifyDate</span>:&nbsp;<span style="color: #E6DB74">'2014:07:13&nbsp;16:21:04'</span>,</div>
+  <div><span style="color: #939393">ModifyDate</span>:&nbsp;<span style="color: #3CDAFF">'2014:07:13&nbsp;16:21:04'</span>,</div>
 </div></div>
   <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: #CCC">YCbCrPositioning</span>:&nbsp;<span style="color: #66D9EF">1</span>,</div>
+  <div><span style="color: #939393">YCbCrPositioning</span>:&nbsp;1,</div>
 </div></div>
   <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: #CCC">ColorSpace</span>:&nbsp;<span style="color: #66D9EF">1</span>,</div>
+  <div><span style="color: #939393">ColorSpace</span>:&nbsp;1,</div>
 </div></div>
   <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: #CCC">ExifImageWidth</span>:&nbsp;<span style="color: #66D9EF">380</span>,</div>
+  <div><span style="color: #939393">ExifImageWidth</span>:&nbsp;380,</div>
 </div></div>
   <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: #CCC">ExifImageHeight</span>:&nbsp;<span style="color: #66D9EF">248</span>,</div>
+  <div><span style="color: #939393">ExifImageHeight</span>:&nbsp;248,</div>
 </div></div>
   <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: #CCC">Model</span>:&nbsp;<span style="color: white">undefined</span>&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: #F92672; font-weight: bold">//</span></div>
+  <div><span style="color: #939393">Model</span>:&nbsp;<span style="color: white">undefined</span>&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: red; font-weight: bold">//</span></div>
 </div>&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: #F92672; font-weight: bold">should&nbsp;equal</span>&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: #E6DB74">'iPhone&nbsp;6'</span></div>
+  <div><span style="color: red; font-weight: bold">should&nbsp;equal</span>&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: #3CDAFF">'iPhone&nbsp;6'</span></div>
 </div></div>
 </div></div>
 </div></div>
   <div>},</div>
 </div></div>
   <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: #CCC">imageSize</span>:&nbsp;{&nbsp;<span style="color: #CCC">height</span>:&nbsp;<span style="color: #66D9EF">248</span>,&nbsp;<span style="color: #CCC">width</span>:&nbsp;<span style="color: #66D9EF">380</span>&nbsp;},</div>
+  <div><span style="color: #939393">imageSize</span>:&nbsp;{&nbsp;<span style="color: #939393">height</span>:&nbsp;248,&nbsp;<span style="color: #939393">width</span>:&nbsp;380&nbsp;},</div>
 </div></div>
   <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: #CCC">thumbnailOffset</span>:&nbsp;<span style="color: #66D9EF">300</span>,</div>
+  <div><span style="color: #939393">thumbnailOffset</span>:&nbsp;300,</div>
 </div></div>
   <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: #CCC">thumbnailLength</span>:&nbsp;<span style="color: #66D9EF">2152</span>,</div>
+  <div><span style="color: #939393">thumbnailLength</span>:&nbsp;2152,</div>
 </div></div>
   <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: #CCC">thumbnailType</span>:&nbsp;<span style="color: #66D9EF">6</span>,</div>
+  <div><span style="color: #939393">thumbnailType</span>:&nbsp;6,</div>
 </div></div>
   <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: #CCC">app1Offset</span>:&nbsp;<span style="color: #66D9EF">24</span></div>
+  <div><span style="color: #939393">app1Offset</span>:&nbsp;24</div>
 </div></div>
   <div>}</div>
 </div><p>Read <a href="http://unexpected.js.org/unexpected-exif/">the documentation</a>.</p>
