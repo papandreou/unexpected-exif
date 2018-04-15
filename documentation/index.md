@@ -40,8 +40,8 @@ to have EXIF data satisfying { tags: { XResolution: 72, Model: 'iPhone 6' } }
     YCbCrPositioning: 1,
     ColorSpace: 1,
     ExifImageWidth: 380,
-    ExifImageHeight: 248,
-    Model: undefined // should equal 'iPhone 6'
+    ExifImageHeight: 248
+    // missing Model: 'iPhone 6'
   },
   imageSize: { height: 248, width: 380 },
   thumbnailOffset: 300,
