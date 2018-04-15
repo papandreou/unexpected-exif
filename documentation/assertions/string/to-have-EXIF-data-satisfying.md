@@ -29,7 +29,7 @@ to have EXIF data satisfying { tags: { XResolution: 96 } }
     XResolution: 72, // should equal 96
     YResolution: 72,
     ResolutionUnit: 2,
-    ModifyDate: '2014:07:13 16:21:04',
+    ModifyDate: 1405268464,
     YCbCrPositioning: 1,
     ColorSpace: 1,
     ExifImageWidth: 380,

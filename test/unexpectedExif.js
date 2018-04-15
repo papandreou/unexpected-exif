@@ -37,7 +37,7 @@ describe('unexpected-exif', function () {
                 "    YResolution: 72,\n" +
                 "    ResolutionUnit: 2,\n" +
                 "    Software: '8.1.1',\n" +
-                "    ModifyDate: '2014:12:01 11:01:21',\n" +
+                "    ModifyDate: 1417431681,\n" +
                 "    YCbCrPositioning: 1,\n" +
                 "    ExposureTime: 0.025,\n" +
                 "    FNumber: 2.2,\n" +
