@@ -1,3 +1,4 @@
-node_modules
-coverage
-test/documentation.spec.js
+/node_modules/
+/coverage/
+/test/documentation.spec.js
+/site-build/
