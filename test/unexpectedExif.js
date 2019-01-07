@@ -1,41 +1,37 @@
 /*global describe, it, __dirname*/
-var unexpected = require('unexpected');
+const unexpected = require('unexpected');
 
-var fs = require('fs');
+const fs = require('fs');
 
-var pathModule = require('path');
+const pathModule = require('path');
 
-describe('unexpected-exif', function() {
-  var expect = unexpected
+describe('unexpected-exif', () => {
+  const expect = unexpected
     .clone()
     .installPlugin(require('../lib/unexpectedExif'));
 
   expect.output.preferredWidth = 80;
 
-  var testImagePath = pathModule.resolve(
+  const testImagePath = pathModule.resolve(
     __dirname,
     '..',
     'testdata',
     'exifOriented.jpg'
   );
 
-  describe('with an image specified by file name', function() {
-    it('should succeed', function() {
-      return expect(testImagePath, 'to have EXIF data satisfying', {
-        tags: { Model: 'iPhone 6' }
-      });
-    });
+  describe('with an image specified by file name', () => {
+    it('should succeed', () => expect(testImagePath, 'to have EXIF data satisfying', {
+      tags: { Model: 'iPhone 6' }
+    }));
 
-    it('should fail with a diff', function() {
+    it('should fail with a diff', () => {
       expect(
-        function() {
-          return expect(testImagePath, 'to have EXIF data satisfying', {
-            tags: {
-              Make: 'Apple',
-              ShutterSpeedValue: expect.it('to be within', 8, 9)
-            }
-          });
-        },
+        () => expect(testImagePath, 'to have EXIF data satisfying', {
+          tags: {
+            Make: 'Apple',
+            ShutterSpeedValue: expect.it('to be within', 8, 9)
+          }
+        }),
         'to throw',
         'expected ' +
           testImagePath +
@@ -91,13 +87,11 @@ describe('unexpected-exif', function() {
     });
   });
 
-  describe('with an image specified by a Buffer instance', function() {
-    it('should succeed', function() {
-      return expect(
-        fs.readFileSync(testImagePath),
-        'to have EXIF data satisfying',
-        { tags: { Model: 'iPhone 6' } }
-      );
-    });
+  describe('with an image specified by a Buffer instance', () => {
+    it('should succeed', () => expect(
+      fs.readFileSync(testImagePath),
+      'to have EXIF data satisfying',
+      { tags: { Model: 'iPhone 6' } }
+    ));
   });
 });
