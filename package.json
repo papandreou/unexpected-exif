@@ -16,9 +16,9 @@
     "eslint": "^5.12.0",
     "eslint-config-pretty-standard": "^2.0.0",
     "eslint-plugin-prettier": "^3.0.1",
-    "istanbul": "^0.4.5",
     "minimist": "^1.2.0",
     "mocha": "^5.1.0",
+    "nyc": "^13.1.0",
     "prettier": "^1.15.3",
     "unexpected": "^11.0.0-4",
     "unexpected-documentation-site-generator": "^5.0.0",
@@ -28,7 +28,7 @@
     "lint": "eslint .",
     "test": "mocha ./documentation/**/*.md ./test/**/*.js && npm run lint",
     "ci": "npm test && npm run coverage && npm run generate-site",
-    "coverage": "NODE_ENV=development istanbul cover _mocha --report text --report lcov -- --reporter dot && echo google-chrome coverage/lcov-report/index.html",
+    "coverage": "NODE_ENV=development nyc --reporter=lcov --reporter=text --all -- npm test && echo google-chrome coverage/lcov-report/index.html",
     "generate-site": "generate-site --require ./bootstrap-unexpected-markdown.js && cp magic-pen-6-colours.jpg site-build && cp magic-pen-6-colours.jpg site-build/assertions/string/to-have-EXIF-data-satisfying/ && cp magic-pen-6-colours.jpg site-build/assertions/Buffer/to-have-EXIF-data-satisfying/",
     "update-examples": "generate-site --require ./bootstrap-unexpected-markdown.js --update-examples",
     "deploy-site": "deploy-site.sh"
@@ -51,5 +51,10 @@
   "bugs": {
     "url": "https://github.com/unexpectedjs/unexpected-exif/issues"
   },
-  "homepage": "https://github.com/unexpectedjs/unexpected-exif"
+  "homepage": "https://github.com/unexpectedjs/unexpected-exif",
+  "nyc": {
+    "include": [
+      "lib/**"
+    ]
+  }
 }
