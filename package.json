@@ -25,7 +25,7 @@
   "scripts": {
     "lint": "eslint .",
     "test": "mocha ./documentation/**/*.md ./test/**/*.js && npm run lint",
-    "travis": "npm test && npm run coverage && (<coverage/lcov.info coveralls || true) && npm run generate-site",
+    "ci": "npm test && npm run coverage && (<coverage/lcov.info coveralls || true) && npm run generate-site",
     "coverage": "NODE_ENV=development istanbul cover _mocha --report text --report lcov -- --reporter dot && echo google-chrome coverage/lcov-report/index.html",
     "generate-site": "generate-site --require ./bootstrap-unexpected-markdown.js && cp magic-pen-6-colours.jpg site-build && cp magic-pen-6-colours.jpg site-build/assertions/string/to-have-EXIF-data-satisfying/ && cp magic-pen-6-colours.jpg site-build/assertions/Buffer/to-have-EXIF-data-satisfying/",
     "update-examples": "generate-site --require ./bootstrap-unexpected-markdown.js --update-examples",
