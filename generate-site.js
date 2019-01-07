@@ -1,8 +1,9 @@
 /*global global*/
 var argv = require('minimist')(process.argv.slice(2));
 
-var unexpected = require('unexpected').clone()
-    .installPlugin(require('./lib/unexpectedExif'));
+var unexpected = require('unexpected')
+  .clone()
+  .installPlugin(require('./lib/unexpectedExif'));
 
 unexpected.output.preferredWidth = 80;
 
