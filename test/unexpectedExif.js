@@ -1,4 +1,3 @@
-/*global describe, it, __dirname*/
 const unexpected = require('unexpected');
 const fs = require('fs');
 const pathModule = require('path');
