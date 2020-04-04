@@ -1,21 +1,29 @@
 Asserts that the given Buffer instance contains EXIF data that [satisfies](http://unexpected.js.org/assertions/any/to-satisfy/) the given spec:
 
 ```js#async:true
-return expect(require('fs').readFileSync('magic-pen-6-colours.jpg'), 'to have EXIF data satisfying', {
+return expect(
+  require('fs').readFileSync('magic-pen-6-colours.jpg'),
+  'to have EXIF data satisfying',
+  {
     tags: {
-        XResolution: 72
-    }
-});
+      XResolution: 72,
+    },
+  }
+);
 ```
 
 You get a diff when the assertion fails:
 
 ```js#async:true
-return expect(require('fs').readFileSync('magic-pen-6-colours.jpg'), 'to have EXIF data satisfying', {
+return expect(
+  require('fs').readFileSync('magic-pen-6-colours.jpg'),
+  'to have EXIF data satisfying',
+  {
     tags: {
-        XResolution: 96
-    }
-});
+      XResolution: 96,
+    },
+  }
+);
 ```
 
 ```output

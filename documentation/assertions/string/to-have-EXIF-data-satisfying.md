@@ -2,9 +2,9 @@ Asserts that the given image has EXIF data that [satisfies](http://unexpected.js
 
 ```js#async:true
 return expect('magic-pen-6-colours.jpg', 'to have EXIF data satisfying', {
-    tags: {
-        XResolution: 72
-    }
+  tags: {
+    XResolution: 72,
+  },
 });
 ```
 
@@ -12,9 +12,9 @@ You get a diff when the assertion fails:
 
 ```js#async:true
 return expect('magic-pen-6-colours.jpg', 'to have EXIF data satisfying', {
-    tags: {
-        XResolution: 96
-    }
+  tags: {
+    XResolution: 96,
+  },
 });
 ```
 

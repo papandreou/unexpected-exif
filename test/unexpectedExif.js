@@ -19,7 +19,7 @@ describe('unexpected-exif', () => {
   describe('with an image specified by file name', () => {
     it('should succeed', () =>
       expect(testImagePath, 'to have EXIF data satisfying', {
-        tags: { Model: 'iPhone 6' }
+        tags: { Model: 'iPhone 6' },
       }));
 
     it('should fail with a diff', () => {
@@ -28,8 +28,8 @@ describe('unexpected-exif', () => {
           expect(testImagePath, 'to have EXIF data satisfying', {
             tags: {
               Make: 'Apple',
-              ShutterSpeedValue: expect.it('to be within', 8, 9)
-            }
+              ShutterSpeedValue: expect.it('to be within', 8, 9),
+            },
           }),
         'to throw',
         `expected ${testImagePath} (image/jpeg)\n` +
@@ -87,7 +87,7 @@ describe('unexpected-exif', () => {
   describe('with an image specified by a Buffer instance', () => {
     it('should succeed', () =>
       expect(fs.readFileSync(testImagePath), 'to have EXIF data satisfying', {
-        tags: { Model: 'iPhone 6' }
+        tags: { Model: 'iPhone 6' },
       }));
   });
 });

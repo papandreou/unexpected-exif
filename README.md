@@ -1,5 +1,4 @@
-unexpected-exif
-===============
+# unexpected-exif
 
 EXIF data plugin for the [Unexpected](https://unexpectedjs.github.io/) assertion library (version 7+ required). Uses the [exif-parser](https://github.com/bwindels/exif-parser) module to do most of the work.
 
@@ -10,8 +9,7 @@ EXIF data plugin for the [Unexpected](https://unexpectedjs.github.io/) assertion
 
 Read [the documentation](http://unexpected.js.org/unexpected-exif/).
 
-License
--------
+## License
 
 Unexpected-exif is licensed under a standard 3-clause BSD license -- see
 the `LICENSE` file for details.
