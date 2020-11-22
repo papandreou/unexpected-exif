@@ -20,8 +20,8 @@ The image can be specified either as a string (file name) or as a Buffer instanc
 return expect('magic-pen-6-colours.jpg', 'to have EXIF data satisfying', {
   tags: {
     XResolution: 72,
-    Model: 'iPhone 6',
-  },
+    Model: 'iPhone 6'
+  }
 });
 ```
 
@@ -52,6 +52,10 @@ to have EXIF data satisfying { tags: { XResolution: 72, Model: 'iPhone 6' } }
 ```
 
 Read [the documentation](http://unexpected.js.org/unexpected-exif/).
+
+## Releases
+
+[Changelog](https://github.com/unexpectedjs/unexpected-exif/blob/master/CHANGELOG.md)
 
 ## License
 
