@@ -1,3 +1,26 @@
+### v5.0.0 (2022-04-28)
+
+#### Pull requests
+
+- [#42](https://github.com/unexpectedjs/unexpected-exif/pull/42) Upgrade unexpected-documentation-site-generator to version 7.1.0 ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+- [#82](https://github.com/unexpectedjs/unexpected-exif/pull/82) Upgrade eslint-plugin-mocha to version 10.0.1 ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+- [#79](https://github.com/unexpectedjs/unexpected-exif/pull/79) Upgrade prettier to version 2.5.0 ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+- [#75](https://github.com/unexpectedjs/unexpected-exif/pull/75) Upgrade eslint-plugin-promise to version 5.1.1 ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+- [#64](https://github.com/unexpectedjs/unexpected-exif/pull/64) Upgrade eslint-plugin-mocha to version 9.0.0 ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+- [#63](https://github.com/unexpectedjs/unexpected-exif/pull/63) Upgrade prettier to version 2.3.0 ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+- [#56](https://github.com/unexpectedjs/unexpected-exif/pull/56) Upgrade eslint-config-prettier to version 7.0.0 ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+- [#53](https://github.com/unexpectedjs/unexpected-exif/pull/53) Upgrade magicpen-media to version 3.0.0 ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+- [#54](https://github.com/unexpectedjs/unexpected-exif/pull/54) Upgrade eslint-plugin-standard to version 5.0.0 ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+
+#### Commits to master
+
+- [Update unexpected the dev dep to ^13.0.0, allow ^13.0.0 for the peer dep](https://github.com/unexpectedjs/unexpected-exif/commit/55935ffbafcc850141ee3cedd9c72f8d73c79b72) ([Andreas Lind](mailto:andreaslindpetersen@gmail.com))
+- [npm i --save-dev eslint-plugin-n eslint-config-standard@latest && npm uninstall eslint-plugin-node eslint-plugin-standard](https://github.com/unexpectedjs/unexpected-exif/commit/a6a091d7f07b5912ccd9dc1b20bbf3805c4b2dd8) ([Andreas Lind](mailto:andreas.lind@workday.com))
+- [Update eslint to version 8.6.0](https://github.com/unexpectedjs/unexpected-exif/commit/18e57cc829a39b67627a7ce852877973f9d85ec9) ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+- [Unsupport node.js 10](https://github.com/unexpectedjs/unexpected-exif/commit/0cc0e86f4f66ec3308c4a4d0d4114fe0f55014e6) ([Andreas Lind](mailto:andreaslindpetersen@gmail.com))
+- [Replace Travis with Github Actions](https://github.com/unexpectedjs/unexpected-exif/commit/7f1a653794f490cd62197e9eba1e1f0e829e69b3) ([Andreas Lind](mailto:andreaslindpetersen@gmail.com))
+- [+10 more](https://github.com/unexpectedjs/unexpected-exif/compare/v5.0.0...v5.0.0)
+
 ### v5.0.0 (2020-11-22)
 
 #### Pull requests
